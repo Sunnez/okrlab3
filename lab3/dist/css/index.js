@@ -79,7 +79,7 @@ window.addEventListener('click', function() {
         document.querySelector('#block-1').innerHTML  = "";
     }
   });
-
+//6
   const initEditableBlocks = () => {
     Array.from(document.getElementsByClassName('editArea')).map((area) => {
       area.addEventListener('change', (event) => {
@@ -112,18 +112,20 @@ window.addEventListener('click', function() {
     `<textarea class="editArea">${content}</textarea>
     <button type="submit" class="editBtn">Return default</button>`)
   }
+  //4
   function changeColor(color)  {
-      document.getElementById("head").style.background = color;
-      document.getElementById("top").style.background = color;
-      document.getElementById("bot").style.background = color;
-      document.getElementById("section-2").style.background = color;
-      document.getElementById("section-3").style.background = color;
-      document.getElementById("section-4").style.background = color;
-      document.getElementById("section-5").style.background = color;
-      document.getElementById("section-6").style.background = color;
-      document.body.style.background = color;
+      document.getElementById("head").style.outlineColor = color;
+      document.getElementById("top").style.outlineColor = color;
+      document.getElementById("bot").style.outlineColor = color;
+      document.getElementById("section-2").style.outlineColor = color;
+      document.getElementById("section-3").style.outlineColor = color;
+      document.getElementById("section-4").style.outlineColor = color;
+      document.getElementById("section-5").style.outlineColor = color;
+      document.getElementById("section-6").style.outlineColor = color;
+      //document.body.style.background = color;
 
   }
+  // add 3 check tags/
   const isValidHTML = (html) => {
     const doc = document.createElement('div');
     doc.innerHTML = html;
